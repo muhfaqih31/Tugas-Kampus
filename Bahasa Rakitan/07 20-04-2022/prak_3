@@ -1,0 +1,27 @@
+mov ax,-100 	mengisi register ax dengan nilai -100
+mov cx,9	mengisi register cx dengan 9
+cwd 		konversi -100 di ax ke -100 di dx sebelum pembagian
+idiv cx		pembagian unsigned
+
+Contoh di atas menampilkan pembagian dua angka 16-bit signed. Di sini, -100 di AX dibagi dengan +9 di CX. Instruksi CWD mengkonversi -100 di AX ke -100 di DX-AX sebelum pembagian. Setelah pembagian, hasilnya tampil di DX-AX sebagai pembagi dari -11 di AX dan sisa -1 di DX
+
+5-19
+
+MOV DX,1234	mengisi register DX dengan 1234 BCD
+MOV BX,3099	mengisi register BX dengan 3099 BCD
+MOV AL,BL	memindahkan isi nilai BL ke AL
+SUB AL,DL 	mengurangi nilai DL dari BL (mengurangi AL dengan DL lalu disimpan di register AL)
+DAS  		Menyesuaikan hasil pengurangan dua nilai packed BCD untuk membuat hasil packed BCD atau 
+		menyesuaikan nilai AL ke hasil 2 digit packed desimal
+MOV CL,AL	memindahkan register AL ke CL
+MOV AL,BH 	memindahkan register BH ke AL
+SBB AL,DH	SBB (Sorry Bau Bales :v), Pengurangan operand source dan nilai carry flag dari destination operand
+DAS		enyesuaikan hasil pengurangan dua nilai packed BCD untuk membuat hasil packed BCD atau 
+		menyesuaikan nilai AL ke hasil 2 digit packed desimal
+MOV CH,AL	memindahkan nilai register AL ke CH
+
+Program di atas menambahkan angka BCD di DX dan BX, dan menyimpan hasilnya ke CX
+
+
+
+

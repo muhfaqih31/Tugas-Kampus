@@ -1,0 +1,25 @@
+mov cx, 3
+mov ah, 02
+mov dl, 4c
+int 21 
+loop 0107
+mov ax,4c00
+int 21
+
+https://stackoverflow.com/questions/8821656/how-to-end-assembly-correctly
+
+https://stackoverflow.com/questions/26717369/basic-assembly-code-crashes-dos-emulator
+
+0100: mov ah, 09
+0102: mov dx, 010A
+0105: int 21h
+0107: int 20h
+010A: db "Hello World!$"
+
+17B6:0100 MOV AH,9
+17B6:0102 JMP 109
+17B6:0104 DB 'SAYA$'
+17B6:0109 MOV DX,104
+17B6:010C INT 21
+17B6:010E INT 20 
+

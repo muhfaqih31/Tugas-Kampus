@@ -1,0 +1,11 @@
+Deskripsi:
+Terlampir tugas praktikum 3 Instruksi Aritmatika dan Logika untuk mendukung pemahaman cara kerja dari mikroprosesor. Baca dan pelajari dengan baik tugas praktikum ini.
+
+Teknis pengerjaan tugas praktikum:
+Buatlah program menggunakan debug.exe sesuai lampiran. NIM Ganjil mengerjakan example 5-15 dan 5-19, sedangkan NIM Genap mengerjakan example 5-16 dan example 5-23
+Screenshot listing program Anda dari Debug (melalui DOSBox) per nomor ke file .doc
+Lengkapi dengan nama lengkap, NPM, dan tanggal penyelesaian tugas
+Tulisan juga program lengkap Anda dengan format .doc dan jelaskan maksud perintah setiap instruksi 
+Teknik pengumpulan tugas:
+1. Simpan file screenshot dan .doc dengan nama file: Praktik3_nama_NIM_Ganjil/Genap.pdf
+2. Unggah pada bagian unggah pada tugas ini.

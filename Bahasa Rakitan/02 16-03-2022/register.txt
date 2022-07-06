@@ -1,0 +1,14 @@
+TODI CONTROL THE FLAG
+
+TF -> Keperluan debugging, single step mode
+OF -> Overflow, memberitahu jika hasil perhitungan melebihi kapasitas mesin (operasi tidak benar)
+DF -> mengontrol arah string DF 1 turun, DF 0 naik
+IF -> interupsi, 1 interupsi terjadi 0 interupsi tidak terjadi
+
+ZASPC of the status
+
+ZF -> jika hasil instruksi 0, 1
+AF -> pengaturan desimal
+SF -> tanda positif negatif, jika 1 negatif dan jika 0 positif
+PF -> genap, ganjil. 1 genap, 0 ganjil
+CF -> carry out atau borrow hasil tertinggi 1

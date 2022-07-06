@@ -1,0 +1,6 @@
+STC -> Set Carry
+CLC -> Clear Carry
+03, AL
+01, AH
+AH kiri
+AL kanan
