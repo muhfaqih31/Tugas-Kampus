@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+
+    <script type="text/javascript">
+      function encrypt() {
+         const getString = document.querySelector('#string').value;
+         const getShift  = document.querySelector('#shift').value;
+         result = "";
+
+         for(let i = 0; i < getString.length; i++) {
+           if(getString[i] >= 'A' && getString[i] <= 'Z') {
+             result += String.fromCharCode((getString.charCodeAt(i) + parseInt(getShift) - 65) % 26 + 65);
+           }
+
+          else if(getString[i] >= 'a' && getString[i] <= 'z') {
+             result += String.fromCharCode((getString.charCodeAt(i) + parseInt(getShift) - 97) % 26 + 97);
+         }
+
+         else if (getString[i] >= '0' && getString[i] <= '9') {
+            result += (getString[i] - 48 + parseInt(getShift) % 10)  + 48;
+        }
+
+         // console.log(result);
+         document.getElementById("hasil").innerHTML = result;
+      }
+    }
+
+      function decrypt() {
+        const getString = document.querySelector('#string').value;
+        const getShift  = document.querySelector('#shift').value;
+        result = "";
+
+        for(let i = 0; i < getString.length; i++) {
+            if(getString[i] >= 'A' && getString[i] <= 'Z') {
+              result += String.fromCharCode((getString.charCodeAt(i) - parseInt(getShift) - 65) % 26 + 65);
+            }
+
+           else if(getString[i] >= 'a' && getString[i] <= 'z') {
+              result += String.fromCharCode((getString.charCodeAt(i) - parseInt(getShift) - 97) % 26 + 97);
+           }
+
+           else if (getString[i] >= '0' && getString[i] <= '9') {
+              result += (getString[i] - 48 - parseInt(getShift) % 10)  + 48;
+          }
+        }
+
+        // console.log(result);
+        document.getElementById("hasil").innerHTML = result;
+      }
+
+      function crack() {
+        const getString = document.querySelector('#cipher').value;
+
+        for(let i = 0; i < 26; i++) {
+
+        }
+
+      }
+
+    </script>
+  </head>
+  <body>
+    <h1>Caesar Cipher by Siber Faqih</h1>
+    <input id="string" type="text" placeholder="insert string"><br> <br>
+    <input id="shift" type="text" placeholder="insert shift"><br /> <br>
+    <button onclick="encrypt()" type="button" name="button">Encrypt</button>
+    <button onclick="decrypt()" type="button" name="button">Decrypt</button>
+    <p id="hasil">Hasil</p>
+
+    <hr />
+
+    <h1>Caesar Cipher Cracker</h1>
+    <p>You can use this crack if you don't know the shift.</p>
+    <input id="cipher" type="text" placeholder="insert cipher"><br> <br>
+    <button onclick="crack()" type="button" name="button">Crack</button>
+  </body>
+</html>
